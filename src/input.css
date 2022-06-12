@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .timeline-img {
+    @apply h-16 w-16 rounded-full shadow-lg border-4 bg-slate-50 hover:bg-dark hover:text-primary transition duration-300 ease-in-out text-2xl font-bold border-slate-50 absolute lg:mx-auto lg:left-0 lg:right-0 mt-4;
+  }
+  .timeline-container {
+    @apply relative pt-2 pl-24 lg:w-1/2 lg:ml-auto lg:pl-16;
+  }
+  .timeline-container-left {
+    @apply lg:ml-0 lg:mr-auto lg:pl-0 lg:pr-16;
+  }
+  .timeline-pointer {
+    @apply absolute inset-0 left-[87px] h-4 w-4 transform rotate-45 bg-slate-50 group-hover:bg-dark transition duration-300 ease-in-out top-11 md:left-24 lg:left-14;
+  }
+  .timeline-pointer-left {
+    @apply lg:left-auto lg:right-14;
+  }
+}
